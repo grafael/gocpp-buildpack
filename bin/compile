@@ -8,4 +8,4 @@ echo "-----> Found a hello.txt"
 
 
 echo "-----> Compiling lib ..."
-cd $BUILD_DIR/MITIE/mitielib
+make $BUILD_DIR/MITIE/mitielib
