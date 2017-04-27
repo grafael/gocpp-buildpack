@@ -1,11 +1,1 @@
 #!/bin/sh
-
-indent() {
-	  sed -u 's/^/       /'
-}
-
-echo "-----> Found a hello.txt"
-
-
-echo "-----> Compiling lib ..."
-make $BUILD_DIR/MITIE/mitielib
