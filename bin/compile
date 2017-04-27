@@ -8,6 +8,6 @@ echo "-----> Found a hello.txt"
 
 
 echo "-----> Compiling lib ..."
-echo "-----> $BUILD_DIR ..."
+echo `ls -lia`
 cd $BUILD_DIR/MITIE/mitielib
-make
+echo `ls -lia`
