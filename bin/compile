@@ -8,6 +8,5 @@ echo "-----> Found a hello.txt"
 
 
 echo "-----> Compiling lib ..."
-echo "-----> BD: ${BUILD_DIR} ..."
-cd ${BUILD_DIR}/MITIE/mitielib
+cd $BUILD_DIR/MITIE/mitielib
 make
