@@ -6,11 +6,12 @@ if [ ! -d $1/MITIE ]; then
 	exit 1
 fi
 
+apt-get install cmake 
+
 #Compile LIB
 cd $1/MITIE/mitielib
 make
 
-cd mitielib
 mkdir build
 cd build
 cmake ..
