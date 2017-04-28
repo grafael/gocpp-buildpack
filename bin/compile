@@ -11,5 +11,8 @@ fi
 
 
 
+cd $1/MITIE/mitielib
+make
+
 cd $1/MITIE/examples/python
 ./ner.py
