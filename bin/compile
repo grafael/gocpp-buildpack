@@ -1,7 +1,5 @@
 #!/bin/sh
 
-LD_LIBRARY_PATH=/usr/local/lib64/:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH
 
 #Verify MITIE LIB
 if [ ! -d $1/MITIE ]; then
@@ -9,10 +7,6 @@ if [ ! -d $1/MITIE ]; then
 	exit 1
 fi
 
-
-
-cd $1/MITIE/mitielib
-make
 
 cd $1/MITIE/examples/python
 ./ner.py
