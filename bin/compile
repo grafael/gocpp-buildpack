@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Verify MITIE LIB
-if [ ! -d $1/MITIE ]; the
+if [ ! -d $1/MITIE ]; then
 	echo "---------> Missing MITIE LIB"
 	exit 1
 fi
