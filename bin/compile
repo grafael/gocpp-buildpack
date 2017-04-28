@@ -9,4 +9,9 @@ fi
 #Compile LIB
 cd $1/MITIE/mitielib
 make
-make install
+
+cd mitielib
+mkdir build
+cd build
+cmake ..
+cmake --build . --config Release --target install
