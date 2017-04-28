@@ -6,13 +6,5 @@ if [ ! -d $1/MITIE ]; then
 	exit 1
 fi
 
-apt-get install cmake 
-
-#Compile LIB
-cd $1/MITIE/mitielib
-make
-
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release --target install
+cd $1/MITIE/examples/python
+./ner.py
