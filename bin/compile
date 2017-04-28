@@ -1,10 +1,15 @@
 #!/bin/sh
 
+LD_LIBRARY_PATH=/usr/local/lib64/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+
 #Verify MITIE LIB
 if [ ! -d $1/MITIE ]; then
 	echo "---------> Missing MITIE LIB"
 	exit 1
 fi
+
+
 
 cd $1/MITIE/examples/python
 ./ner.py
