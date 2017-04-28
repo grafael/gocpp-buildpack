@@ -1,1 +1,4 @@
 #!/bin/sh
+
+
+echo "--->$BUILD_DIR"
