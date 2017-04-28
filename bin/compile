@@ -1,5 +1,12 @@
 #!/bin/sh
 
+#Verify MITIE LIB
+if [ ! -d $1/MITIE ]; the
+	echo "---------> Missing MITIE LIB"
+	exit 1
+fi
 
+#Compile LIB
 cd $1/MITIE/mitielib
 make
+make install
